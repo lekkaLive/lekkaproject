@@ -1,0 +1,110 @@
+@media(max-width: 992px){
+    div.nav, div.aside{
+        display: none;
+    }
+    /*div.container-fluid{
+        width: 50%;
+    }*/
+    ul.oldalmenu {
+        margin: 8px;
+        padding: 5px 2px 2px 5px;
+        list-style: none;
+    }
+    ul.egyedi{
+        background-color: #fff;
+        width:fit-content;        /*változtatva: unset*/
+        margin-top: 10px;
+        border-radius: 15px;
+        padding: 15px;
+        gap: 10px;
+        justify-content: space-between;/*változtatva*/
+        flex-direction: column;          /*változtatva*/
+        /*align-items: end;*/
+    }
+    form.d-flex{
+        margin-top:10px;
+    }
+    form.nav-login{
+        display: none;
+    }
+    .nav-link{
+        color: brown;
+    }
+}
+@media(min-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        transform: translate(0px, 0px);
+    }
+}
+.navbar{
+    --bs-navbar-padding-x: none;
+    --bs-navbar-padding-y: none;
+    /*height: 40px;*/
+}
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    transform: translate(60px, -10px);
+}
+.navbar-toggler{
+  margin-top: 10px;
+}
+/*.navbar>.space-around{
+  justify-content: space-around;
+}*/
+.nav{
+    padding:10px 10px 10px 10px;
+    font-size:small;
+    display:block;
+    overflow-y:scroll;
+    height:600px;
+}
+.nav-side{
+  background-color: #ebecee;
+}
+.nav-link{
+    display: inline;
+}
+.d-flex{
+    margin-inline-start: 10px;
+    align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  max-width:fit-content;    /*változtatva:200px*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size:small;
+  position: fixed;    /*változtatva: nem volt*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+.employee:hover .dropdown-menu {
+  display: block;
+}
+
+.children:hover .dropdown-menu {
+  display: block;
+}
+
+.free-day:hover .dropdown-menu {
+  display: block;
+}
+
+.exams:hover .dropdown-menu {
+  display: block;
+}
+
+.printlist:hover .dropdown-menu {
+  display: block;
+}

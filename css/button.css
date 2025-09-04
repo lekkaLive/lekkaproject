@@ -1,0 +1,32 @@
+.btn-group{
+    gap: 0px 15px;
+}
+.btn-primary{
+    color:black;
+    background-color:#fff;
+    box-shadow: -3px -3px 3px #000;
+    margin-left: 10px;
+    --bs-btn-border-color: none;
+}
+.btn-primary:hover{
+    box-shadow: -2px -2px 3px black;
+    color:white;
+    background-color:green;
+    font-weight:bolder;
+}
+.btn-edit{
+    padding: 0px;
+    /*padding-right: 6px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 6px;*/
+}
+.btn-nav{
+    padding:unset;
+    border:unset;
+    background-color: unset;
+    text-decoration: none;
+}
+.btn-nav:hover{
+    font-weight:bolder;
+}

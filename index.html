@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Háttérfolyamat indexhtml</title>
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/belepform.css">
+    <link rel="stylesheet" href="css/error_tool.css">
+    <link rel="stylesheet" href="css/success_tool.css">
+    
+    <script src="bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2e7e59fe6a.js" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    <script src="js/error.js"></script>
+    <script src="js/success.js"></script>
+    <script src="js/changePass.js"></script>  
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container container-image">
+            <div class="row headrow">
+                <div class="col- col-lg-2">
+                   
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="cimer form-horizontal">
+                        
+                    </div> 
+                </div>
+                <div class="col- col-lg-1">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="nav col- col-lg-2">
+                    <div class="form-horizontal">
+                        <nav>
+                            <fieldset>
+                                <legend>Munkavállaló</legend>
+                                <ul class="oldalmenu">
+                                    <li>Felvitel</li>
+                                    <li>Módosítás</li>
+                                    <li>Összes adat</li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Gyerek</legend>
+                                <ul class="oldalmenu">
+                                    <li>Felvitel</li>
+                                    <li>Módosítás</li> 
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Szabadság</legend>
+                                <ul class="oldalmenu">
+                                    <li>Éves összes szabadság</li>
+                                    <hr style="margin: 2px">
+                                    <li>Életkor utáni szabadság</li>
+                                    <li>Gyermekek utáni szabadság</li>
+                                    <li>I. negyedéves kimutatás</li>
+                                    <li>II. negyedéves kimutatás</li>
+                                    <li>III. negyedéves kimutatás</li>
+                                    <li>IV. negyedéves kimutatás</li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Vizsgák</legend>
+                                <ul class="oldalmenu">
+                                    <li>Orvosi alkalmassági</li>
+                                    <hr style="margin: 2px"> 
+                                    <li>Szakmai vizsga</li>
+                                    <li>Pszichológiai vizsga</li>
+                                    <li>Gépkarabély lövészet vizsga</li>
+                                </ul>
+                            </fieldset>
+                            <!--<fieldset>
+                                <legend>Nyomtatható listák</legend>
+                                <ul class="oldalmenu">
+                                    <li>Szabdság tudomásul vétele</li>
+                                    <li>...</li>
+                                    <li>...</li>
+                                    <li>...</li>
+                                    <li>...</li>
+                                </ul>
+                            </fieldset>-->
+                        </nav>
+                    </div>
+                </div>
+                <div class="section col-12 col-lg-9">
+                    <div class="form-horizontal">
+                        <section>
+                            <article class="nav-article">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <div class="container-fluid">
+                                        <!--<a class="navbar-brand" href="index.html">Home</a>-->
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="index.html"><i class='fa-regular fa-house fa-xl'></i></a>
+                                        <div class="collapse navbar-collapse dropdown" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 egyedi">
+                                                <li class="nav-item dropdown employee">
+                                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Munkavállalók
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Felvitel</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Módosítás</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Összes adat</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown children">
+                                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Gyerekek
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Felvitel</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Módosítás</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown free-day">
+                                                    <a class="nav-link dropdown-toggle" href="javascript:loginForm()" id="navbarDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Szabadság
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Éves összes szabadság</a></li>
+                                                        <li class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Életkor utáni szabadság</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Gyerekek utáni szabadság</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">I. negyedéves kimutatás</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">II. negyedéves kimutatás</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">III. negyedéves kimutatás</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">VI. negyedéves kimutatás</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown exams">
+                                                    <a class="nav-link dropdown-toggle" href="javascript:loginForm()" id="navbarDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Vizsgák
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Orvosi alkalmassági</a></li>
+                                                        <li class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Szakmai vizsga</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Pszichológiai vizsga</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:loginForm()">Gépkarabély lövészet</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <form class="d-flex">
+                                                <button type="button" class="btn btn-primary" onclick="loginForm()"><i class="fa-solid fa-arrow-right-to-bracket"></i>Bejelentkezés</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </article>
+                            <article>
+                                <div id="valasz_ablak"></div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="aside col- col-lg-1">
+                    <div class="form-horizontal">
+                        <aside class="grid-container">
+                            <div class="grid-elemek">
+                                <a href="https://njt.hu/" target="_blank"><img src="media/njtlogo.png" alt="jogtar" title="njt" width="80px" height="44px"></a>
+                            </div>
+                            <div class="grid-elemek">
+                                <a href="https://njt.hu/" target="_blank"><img src="media/magyar_cimer.jpg" alt="kozlony" title="közlöny" width="60px" height="85px"></a>
+                            </div>
+                            <div class="grid-elemek">
+                                <a href="https://njt.hu/" target="_blank"><img src="media/katasztrofav.jpg" alt="okf" title="katasztrófavédelem" width="80px" height="80px"></a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-horizontal">
+                            <div class="keszit">
+                                <ul class="adatok">
+                                    <li><span style="font-weight:bold">Név: </span>Lekka Sándor</li>
+                                    <li><span style="font-weight:bold">tel.: </span>+36302694877</li>
+                                    <li><span style="font-weight:bold">email: </span>lekkasanyi@gmail.com</li>
+                                    <hr style="margin: 2px">
+                                </ul>
+                            </div>
+                            <div class="keszit">
+                                © Készítette: Lekka Sándor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+            if (params.get("showlogin") === "true") {
+                loginForm();
+            }
+        };
+    </script>
+</body>
+
+</html>
